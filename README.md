@@ -13,10 +13,10 @@ B/ 	Before runing the GUI: install python3-pyqt5
 
 C/	run the application
 run : python3 main.py
-	1. install miniconda3 and update its packages
-	2. close and reopen the terminal
-	3. make sur the conda is activated
-	4. as pyqt5 is not yet installed under conda lunch the GUI by runing :
+	1. install miniconda3 and update its packages />
+	2. close and reopen the terminal />
+	3. make sur the conda is activated />
+	4. as pyqt5 is not yet installed under conda lunch the GUI by runing : />
 		/usr/bin/python3 main.py 
 	5. install prerequisites
 	6. install openmc
@@ -26,7 +26,7 @@ C/	runing openmc under the GUI
 Use the script bellow to lunch the gui to run openmc : 
 
 conda activate openmc-py3.7
-export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml
-or
-export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/nndc_hdf5/cross_sections.xml
+export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml />
+or/>
+export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/nndc_hdf5/cross_sections.xml />
 python3 gui.py
