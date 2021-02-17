@@ -13,22 +13,22 @@
 
 <b>C/	run the application<b>
 <b>run : python3 main.py<br>
-	<br>1. install miniconda3 and update its packages<br>
-	<br>2. close and reopen the terminal<br>
-	<br>3. make sur the conda is activated<br>
-	<br>4. as pyqt5 is not yet installed under conda lunch the GUI by runing :<br>
-		<br>/usr/bin/python3 main.py <br>
-	<br>5. install prerequisites<br>
-	<br>6. install openmc<br>
-	<br>7. download neutron data<br>
+	<br>     1. install miniconda3 and update its packages<br>
+	<br>     2. close and reopen the terminal<br>
+	<br>     3. make sur the conda is activated<br>
+	<br>     4. as pyqt5 is not yet installed under conda lunch the GUI by runing :<br>
+		<br>     /usr/bin/python3 main.py <br>
+	<br>     5. install prerequisites<br>
+	<br>     6. install openmc<br>
+	<br>     7. download neutron data<br>
 
 <b>D/	runing openmc under the GUI<b>
 <br>Use the script bellow to lunch the gui to run openmc : <br>
 
-<br>conda activate openmc-py3.7<br>
-<br>export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml<br>
-<br># export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/nndc_hdf5/cross_sections.xml<br>
-<br>python3 gui.py<br>
+<br>      conda activate openmc-py3.7<br>
+<br>      export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml<br>
+<br>      # export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/nndc_hdf5/cross_sections.xml<br>
+<br>      python3 gui.py<br>
 
 <p><b>E/ License </b></>
 
