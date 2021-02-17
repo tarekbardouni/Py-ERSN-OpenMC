@@ -3,7 +3,7 @@
 </p>How to use the GUI to install openmc and prerequisistes under miniconda3</p>
 </p>Prof. Tarek El Bardouni, University Abdelmalek Essaadi, Tetouan, Morocco
 </p>
-<p><b>A/  Install first gcc g++ and cmake if doesn't exist </b>
+<b>A/  Install first gcc g++ and cmake if doesn't exist </b>
 
 <b>B/ 	Before runing the GUI: install python3-pyqt5<b>
 	
@@ -30,7 +30,7 @@
 </p>      # export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/nndc_hdf5/cross_sections.xml</p>
 </p>      python3 gui.py</p>
 
-<p><b>E/ License </b></>
+<b>E/ License </b></>
 
 <p>This software is free software; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. For the complete text of the license see the GPL-web page.</p>
 </article>
