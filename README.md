@@ -7,9 +7,9 @@
 
 <b>B/ 	Before runing the GUI: install python3-pyqt5<b>
 	
-	<br>sudo apt install python3-pyqt5<br>
+	sudo apt install python3-pyqt5
 
-	<br>or pyqt5-dev and pyqt5-dev-tools<br>
+	or pyqt5-dev and pyqt5-dev-tools
 
 <b>C/	run the application<b>
 <b>run : python3 main.py<br>
