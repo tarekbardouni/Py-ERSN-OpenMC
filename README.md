@@ -5,14 +5,14 @@
 </p>
 </p>A/  Install first gcc g++ and cmake if doesn't exist </p>
 
-<b>B/ 	Before runing the GUI: install python3-pyqt5<b>
+</p>B/ 	Before runing the GUI: install python3-pyqt5</p>
 	
 	sudo apt install python3-pyqt5
 
 	or pyqt5-dev and pyqt5-dev-tools
 
-<b>C/	run the application<b>
-<b>run : python3 main.py<br>
+</p>C/	run the application</p>
+</p>run : python3 main.py</p>
 	<br>     1. install miniconda3 and update its packages<br>
 	<br>     2. close and reopen the terminal<br>
 	<br>     3. make sur the conda is activated<br>
@@ -22,15 +22,15 @@
 	<br>     6. install openmc<br>
 	<br>     7. download neutron data<br>
 
-<b>D/	runing openmc under the GUI<b>
-<br>Use the script bellow to lunch the gui to run openmc : </br>
+</p>D/	runing openmc under the GUI</p>
+</p>Use the script bellow to lunch the gui to run openmc : </p>
 
 </p>      conda activate openmc-py3.7</p>
 </p>      export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml</p>
 </p>      # export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/nndc_hdf5/cross_sections.xml</p>
 </p>      python3 gui.py</p>
 
-<b>E/ License </b>
+</p>E/ License </p>
 
 <p>This software is free software; you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. For the complete text of the license see the GPL-web page.</p>
 </article>
