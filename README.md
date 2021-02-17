@@ -23,7 +23,7 @@
 	<br>     7. download neutron data<br>
 
 <b>D/	runing openmc under the GUI<b>
-<br>Use the script bellow to lunch the gui to run openmc : <br>
+<br>Use the script bellow to lunch the gui to run openmc : </br>
 
 </p>      conda activate openmc-py3.7</p>
 </p>      export OPENMC_CROSS_SECTIONS=/home/tarek/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml</p>
