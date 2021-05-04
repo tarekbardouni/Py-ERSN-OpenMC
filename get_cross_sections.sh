@@ -185,6 +185,11 @@ fi
 #===============================================================================
 #                           Download ACE data
 #===============================================================================
+if grep -q "ACE" <<< "$XS_ACE_Library"; then     
+     if [ "$(which curl)" == "" ]; then
+    	conda install curl
+     fi
+fi    
 if [[ $XS_ACE_Library == ACE-ENDF-B/VII.1_293K ]]; then        
     # This page presents the ACE formatted files for the 423 materials in the 
     # ENDF/B-VII.1 neutron reaction sublibrary and the 20 materials in the 
@@ -442,6 +447,9 @@ fi
 # Download ENDF/B-VII.1 distribution evaluation : ENDF format file
 if [[ $XS_Library == ENDF-B/VII.1 ]]; then        
     ENDF=$DATA_DIR/endf-b-vii.1
+    if [ "$(which curl)" == "" ]; then
+    	conda install curl
+    fi
     if [[ ! -d $ENDF/neutrons || ! -d $ENDF/photoat || ! -d $ENDF/atomic_relax ]]; then
         time curl --output 4kd2gxnf4gtk4w1c8eua5fsua22kvgjb.xz https://anl.box.com/shared/static/4kd2gxnf4gtk4w1c8eua5fsua22kvgjb.xz
         recent_file "ace_tsl"
@@ -454,6 +462,9 @@ if [[ $XS_Library == ENDF-B/VII.1 ]]; then
 fi    
 if [[ $XS_Library == JENDL-4.0 ]]; then        
     ENDF=$DATA_DIR/jendl40
+    if [ "$(which curl)" == "" ]; then
+    	conda install curl
+    fi
     if [[ ! -d $ENDF/neutrons || ! -d $ENDF/photoat || ! -d $ENDF/atomic_relax ]]; then
         time curl --output jendl40-or-up_20160106.tar.gz https://wwwndc.jaea.go.jp/ftpnd/ftp/JENDL/jendl40-or-up_20160106.tar.gz
         tar -zxvf jendl40-or-up_20160106.tar.gz
