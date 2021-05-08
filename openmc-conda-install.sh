@@ -158,7 +158,7 @@ if [[ $INSTALL_PREREQUISITES == yes ]]; then
     echo "      the following line in openm-conda-install.sh script "
     echo "      #conda install -c conda-forge pugixml                                  ==== "
     #conda install -y -c conda-forge pugixml
-    conda install -y pugixml
+    conda install -y pugixml   
 
     # The uncertainties package is not in the default conda channel
     

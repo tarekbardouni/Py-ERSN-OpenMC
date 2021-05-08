@@ -10,7 +10,7 @@ DEPLETION_CHAIN_DATA=$4
 XS_Library=$5
 ENVNAME=$6
 #===============================================================================
-DATA_DIR=$WORK_DIR/data
+DATA_DIR=$WORK_DIR/data    
 
 function recent_file(){
     unset -v latest
