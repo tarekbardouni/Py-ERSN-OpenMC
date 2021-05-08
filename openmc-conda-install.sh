@@ -153,7 +153,12 @@ if [[ $INSTALL_PREREQUISITES == yes ]]; then
 
     # Install OpenMC's Python dependencies
     
-    conda install -y numpy scipy cython pandas lxml matplotlib pugixml vtk ipython pytest
+    conda install -y numpy scipy cython pandas lxml matplotlib vtk ipython pytest
+    echo " ==== If pugixml couldn't be found delet it from the above line and uncomment "
+    echo "      the following line in openm-conda-install.sh script "
+    echo "      #conda install -c conda-forge pugixml                                  ==== "
+    #conda install -y -c conda-forge pugixml
+    conda install -y pugixml
 
     # The uncertainties package is not in the default conda channel
     
