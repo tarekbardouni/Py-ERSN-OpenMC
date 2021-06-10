@@ -154,11 +154,11 @@ if [[ $INSTALL_PREREQUISITES == yes ]]; then
     # Install OpenMC's Python dependencies
     
     conda install -y numpy scipy cython pandas lxml matplotlib vtk ipython pytest
-    echo " ==== If pugixml couldn't be found delet it from the above line and uncomment "
-    echo "      the following line in openm-conda-install.sh script "
+    echo " ==== If pugixml couldn't be installed uncomment the following line in"
+    echo "      openm-conda-install.sh script and comment the one that follows:"
     echo "      #conda install -c conda-forge pugixml                                  ==== "
     #conda install -y -c conda-forge pugixml
-    conda install -y pugixml   
+    conda install -y pugixml
 
     # The uncertainties package is not in the default conda channel
     
@@ -258,7 +258,7 @@ if [[ $INSTALL_OPENMC == yes ]]; then
             unzip -o $ARCHIVE
             # cd "${OPENMC_RELEASE/v/openmc-}"
             cd $OPENMC_DIR
-            if [[ $OPENMC_RELEASE == 'v0.12.0' ]]; then
+            if [[ $OPENMC_RELEASE == *"v0.12"* ]]; then
                 # git submodules are needed
                 cd vendor
                 rm -rf fmt gsl-lite pugixml xtensor xtl
@@ -278,7 +278,6 @@ if [[ $INSTALL_OPENMC == yes ]]; then
     echo $CONDA_PREFIX $INSTALL_IN_CONDA
     mkdir -p build && pushd build
     if [[ $INSTALL_IN_CONDA == yes ]]; then
-        echo "I am here"
         cmake -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX ..
     else
         cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX ..
