@@ -28,7 +28,7 @@
 </p>      conda activate openmc-py3.7</p>
 </p>      export OPENMC_CROSS_SECTIONS=$HOME/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml</p>
 
-</p>      python3 gui.py</p>
+</p>      python3 main.py</p>
 <p>
 	
 </p>E/ License </p>

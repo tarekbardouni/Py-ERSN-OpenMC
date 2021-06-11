@@ -26,4 +26,4 @@ script to lunch the gui to run openmc :
 conda activate openmc-py3.7
 export OPENMC_CROSS_SECTIONS=$HOME/Py-OpenMC-2020/data/endfb71_hdf5/cross_sections.xml
 
-python3 gui.py
+python3 main.py
