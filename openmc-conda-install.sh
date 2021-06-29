@@ -1,5 +1,5 @@
 #!/bin/bash
-
+    
 # This script installs OpenMC, its Python API, and all necessary dependencies
 # into a conda environment. Because it uses compilers and CMake from the
 # Anaconda repository, it's not necessary to have those installed on your

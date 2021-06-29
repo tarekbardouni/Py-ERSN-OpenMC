@@ -3,7 +3,7 @@
 </p>How to use the GUI to install openmc and prerequisistes under miniconda3</p>
 </p>Prof. Tarek El Bardouni, University Abdelmalek Essaadi, Tetouan, Morocco</p>
 <p>
-</p>A/  Install first gcc g++ and cmake if doesn't exist </p>
+</p>A/  First install gcc g++ and cmake if doesn't exist </p>
 
 </p>B/ 	Before runing the GUI: install python3-pyqt5</p>
 	
